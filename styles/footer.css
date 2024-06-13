@@ -1,0 +1,200 @@
+
+.rodapé {
+    background: var(--branco);
+}
+
+.rodapé__box {
+    padding: 1.5rem 1.5rem 0 3rem;
+}
+
+.rodapé__box h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul-escuro);
+}
+
+.rodapé__box p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--azul-escuro);
+    margin-top: 0.5rem;
+}
+
+.rodapé__input {
+    background-color: transparent;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 24px;
+    color: var(--branco);
+    padding: 4px 0 0 16px;
+    width: 80vw;
+    height: 2rem;
+    margin: 1.5rem auto 2rem;
+}
+
+.rodapé__input::placeholder {
+    font-family: var(--poppins-font);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--azul-escuro);
+    text-align: center;
+    background: url("../img/Email.svg") no-repeat;
+    background-position: 3rem;
+    background-size: 1.5rem;
+}
+
+.colab {
+    background: var(--branco);
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #85858580;
+}
+
+.colab p {
+    margin: 1rem auto 1.5rem 1.5rem;
+    color: var(--preto);
+}
+
+.colab p a {
+    color: var(--azul-escuro);
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.colab p a:hover {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.rodapé__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .rodapé__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 9.3rem 3.25rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .rodapé__box__textos h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .rodapé__input {
+        width: 40rem;
+        margin-left: 10rem;
+    }
+
+    .rodapé__input::placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--poppins-font);
+        background-position: 1.5rem;
+        text-align: center;
+    }
+
+    .colab {
+        height: auto;
+        display: flex;
+        align-items: start;
+        gap: 2rem;
+        padding: 3.5rem 1.5rem;
+    }
+
+    .colab p {
+        margin: 0 3rem 0 0;
+    }
+
+    .rodapé__lista {
+        display: block;
+        list-style: none;
+    }
+
+    .rodapé__lista-title {
+        color: var(--cinza-rodapé-1);
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    .rodapé__lista-item {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .rodapé__lista-item a {
+        color: var(--cinza-rodapé-2);
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .rodapé {
+        padding: 4rem 2rem;
+    }
+
+    .rodapé__box {
+        width: 50vw;
+        margin: 0 auto 4rem;
+    }
+
+    .rodapé__box__textos {
+        width: 50%;
+    }
+
+    .rodapé__input {
+        width: 50%;
+        margin-left: 3rem;
+    }
+
+    .rodapé__input::placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--poppins-font);
+        background-position: 4.5rem;
+        text-align: center;
+    }
+
+    .rodapé__input {
+        height: 2.75rem;
+    }
+
+    .colab {
+        padding: 0;
+        margin-left: -2rem;
+    }
+
+    .colab p{
+        font-size: 1.5rem;
+        margin: 3.5rem 2rem 0 5rem;
+    }
+
+    .colab p a {
+        font-size: 1.5rem;
+    }
+
+    .rodapé__lista {
+        border-left: solid 1px #85858580;
+        padding-left: 1rem;
+        margin-right: 12rem;
+        margin-top: 3.5rem;
+    }
+
+    
+}
