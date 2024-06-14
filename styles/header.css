@@ -6,7 +6,7 @@
     position: relative;
     height: 5rem;
     background-color: var(--branco);
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
 }
 
 .cabecalho__menu {
@@ -14,6 +14,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+}
+
+.menu__botao:checked ~ .cabecalho__rótulo > .menu__botao {
+    background-image: url("../img/Menu_Aberto.svg");
+}
+
+.menu__botao:checked ~ .cabecalho__rótulo {
+    background-color: #326589;
 }
 
 .menu__botao {
@@ -52,7 +60,7 @@
 
 .lista__item {
     list-style-type: none;
-    margin: 1.5rem auto 1rem 1.5rem;
+    padding: 1rem;
 }
 
 .lista__item a{
@@ -60,6 +68,7 @@
     font-size: 1rem;
     color: #326589;
     text-transform: uppercase;
+    padding: 1rem 1.3rem 0 0;
 }
 
 .cabecalho__icons {
@@ -84,7 +93,7 @@
 @media screen and (min-width: 1024px) {
 
     .cabecalho {
-        padding: 18px 80px;
+        padding: 10px 70px;
         justify-content: space-around;
     }
 
@@ -132,7 +141,7 @@
         display: none;
         position: absolute;
         top: 100%;
-        left: 35%;
+        left: 33%;
         width: 16vw;
         background-color: var(--branco);
     }
@@ -166,6 +175,23 @@
 
     .icon-textos {
         display: none;
+    }
+
+    .opcoes-botao:checked ~ .opcoes__rótulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 1rem 1rem;
+    }
+
+    .lista__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista__item:hover > a {
+        -webkit-text-fill-color: var(--branco);
     }
 }
 
